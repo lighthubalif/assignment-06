@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Assignment-06 </title>
-    <link rel="stylesheet" href="styles/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -28,17 +28,22 @@
             font-weight: light;
         }
     </style>
-    <style>
-        .buttonHover:hover{
-    background-color: rgba(14, 122, 129, 0.1);
-    cursor: pointer;
-}
 
+    <style>
+       
 .buttonDivStyles{
     text-align: center;
     
     border: 2px solid rgb(209, 207, 207);
     padding: 20px 0px;
+}
+.buttonHover:hover{
+    background-color: rgba(14, 122, 129, 0.1);
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgba(14, 122, 129, 0.5);
 }
 
 .cardStyle{
@@ -48,9 +53,6 @@
     border-radius: 30px;
 }
 
-.active{
-    background-color: rgba(14, 122, 129, 0.5);
-}
 
 
     </style>
@@ -76,8 +78,8 @@
 
     <header class="mb-28 w-10/12 mx-auto">
         
-        <nav class="flex justify-between items-center py-5 md:py-10 ">
-            <div class="icons flex gap-x-3 items-center">
+        <nav class="flex items-center py-5 justify-between md:py-10 ">
+            <div class="icons items-center flex gap-x-3  ">
                 <div>
                     <img class="w-full" src="images/logo.webp" alt="">
                 </div>
@@ -94,16 +96,16 @@
 
             <div class="user-logo">
                 <img width="50" height="50" src="https://img.icons8.com/ios/50/user--v1.png" alt="user--v1"
-                    class="bg-white drop-shadow-2xl rounded-full p-2 hidden md:block" />
+                    class="bg-white p-2 rounded-full drop-shadow-2xl hidden md:block" />
             </div>
 
             <div class="dropdown md:hidden">
                 <div tabindex="0" role="button" class="btn btn-ghost">
                     <i
-                        class="fa-solid fa-bars text-2xl text-[#737373] bg-white py-1.5 px-3 rounded-full drop-shadow-sm border-2 border-black"></i>
+                        class="fa-solid border-2 text-2xl text-[#737373] bg-white py-1.5 px-3 rounded-full drop-shadow-sm fa-bars border-black"></i>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                    class="menu dropdown-content menu-sm  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
                     <li><a href="" class="text-gray-500"> Home </a></li>
                     <li><a href="" class="text-gray-500"> Shop </a></li>
                     <li><a href="" class="text-gray-500"> Contact </a></li>
@@ -118,8 +120,7 @@
 
             <h1 class="text-5xl md:text-6xl mt-5 font-black mb-8"> Your Path to Adoption <br> Starts Here </h1>
 
-            <p class="md:w-1/2 mx-auto text-lg mb-5 md:mb-10"> Find your perfect companion! Explore loving pets ready
-                for adoption and give them a forever home today with us. </p>
+            <p class="md:w-1/2 mx-auto text-lg mb-5 md:mb-10"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a. </p>
 
             <div class="mb-5 md:mb-10">
                 <a href="#adopt-container" class="bg-button-bg font-bold text-xl text-white px-10 py-4 rounded-lg"> View
@@ -137,8 +138,7 @@
         
         <section id="adopt-container" class="mb-10">
             <h2 class="text-4xl font-black mb-6 text-center"> Adopt Your Best Friend </h2>
-            <p class="lg:w-1/2 text-center mx-auto text-md text-secondary-color mb-16"> This is the section where you’ll
-                find lovable pets waiting for their home. Browse through profiles of cats, dogs, and other animals, each
+            <p class="lg:w-1/2 text-center mx-auto text-md text-secondary-color mb-16"> Adopting a pet with your best friend can be a rewarding experience! through profiles of dogs,cats,rabbits and other animals, each
                 looking for a family. </p>
 
             <div id="category-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4">
@@ -148,7 +148,7 @@
 
         
         <section class="mb-10">
-            <div class="heading flex flex-col gap-y-6 text-center md:gap-y-0 md:flex-row md:justify-between mb-8">
+            <div class="heading flex gap-y-6 text-center  flex-col md:gap-y-0 md:justify-between md:flex-row  mb-8">
                 <div>
                     <h4 class="text-2xl font-extrabold"> Best Deal For You </h4>
                 </div>
@@ -180,7 +180,7 @@
     </main>
 
 
-    <footer class="w-full bg-black text-white">
+    <footer class=" bg-black w-full text-white">
         <section class="w-10/12 mx-auto py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 justify-between">
 
             <div class="part-1">
@@ -188,14 +188,15 @@
                     <div class="">
                         <img class="w-full" src="images/logo.webp" alt="">
                     </div>
-                    <h2 class="text-3xl font-black"> Peddy </h2>
+                    <h3 class="text-3xl font-black"> Peddy </h3>
                 </div>
 
                 <div class="leading-8 mb-4">
-                    <p class="text-gray-300"> Location: av. Washington 165, NY CA <br> 54003 </p>
-                    <p class="text-gray-300"> Phone: +31 85 964 47 25 </p>
-                    <p class="text-gray-300"> Email: info@yourdomain.com </p>
-                    <p class="text-gray-300"> Openings hours: 9.00 AM - 5.00 PM </p>
+                    
+                    <p class="text-gray-400"> Location: av. Washington 165, NY CA54003 </p>
+                    <p class="text-gray-400"> Phone: +31 85 964 47 25 </p>
+                    <p class="text-gray-400"> Email: info@yourdomein.com </p>
+                    <p class="text-gray-400"> Openings hours: 9.00 AM - 5.00 PM </p>
                 </div>
 
 
@@ -261,11 +262,11 @@
             <div class="part-2">
                 <h3 class="mb-8 text-xl font-bold"> Useful Links </h3>
                 <ul>
-                    <li><a href="#" class="text-gray-500"> Home </a></li>
-                    <li><a href="#" class="text-gray-500"> About Us </a></li>
-                    <li><a href="#" class="text-gray-500"> Animals </a></li>
-                    <li><a href="#" class="text-gray-500"> Foundation </a></li>
-                    <li><a href="#" class="text-gray-500"> Contacts </a></li>
+                    <li><a href="#" class="text-gray-400"> Home </a></li>
+                    <li><a href="#" class="text-gray-400"> About Us </a></li>
+                    <li><a href="#" class="text-gray-400"> Animals </a></li>
+                    <li><a href="#" class="text-gray-400"> Foundation </a></li>
+                    <li><a href="#" class="text-gray-400"> Contacts </a></li>
                 </ul>
             </div>
 
@@ -291,7 +292,7 @@
             <div class="modal-action flex flex-col items-center">
                 <form method="dialog" class="">
                     
-                    <button class="btn btn-lg px-40 lg:px-52 bg-teal-500 text-xl text-white font-black">Close</button>
+                    <button class="btn px-40 btn-lg lg:px-52 bg-teal-500 text-xl text-white font-black">Close</button>
                 </form>
             </div>
         </div>
@@ -317,7 +318,7 @@
     </dialog>
 
     <script src="js/script.js"></script>
-    <script src="js/script.js"></script>
+
 </body>
 
 </html>
